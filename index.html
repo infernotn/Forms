@@ -8,9 +8,14 @@
   </head>
   <style>
     body {
-        width: 100vw;
-        height: 100vh;
-      /* background-color: rgb(212, 33, 39); */
+      padding: 0%;
+      margin: 0%;
+        width: 98vw;
+        height: 97vh;
+        display: flex;
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
       background-image: url(https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg);
     background-size: cover;
     }
@@ -22,11 +27,11 @@
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
       max-width: 40%;
-      height: 90%;
+      max-height: 50%;
       background: rgba(35, 35, 53, 0.5);
 
-      padding: 2.5rem 1rem;
-      margin: auto;
+      padding: 2.5rem 1.5rem;
+      
       border-radius: 0.25rem;
       visibility: visible;
 
@@ -53,8 +58,8 @@
     }
 
     input:focus {
-      box-shadow: rgb(255, 250, 224) 0px 0px 10px;
-      color: rgba(43, 43, 73, 1);
+      box-shadow: rgb(255, 250, 224) 0px 0px 3px;
+            color: rgba(43, 43, 73, 1);
     }
     input::placeholder {
       color: rgba(43, 43, 73, 0.5);
@@ -98,7 +103,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      color: rgba(243, 243, 243, 0.9);
+      color: rgba(243, 243, 243, 0.8);
       height: fit-content;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -108,6 +113,7 @@
       margin-top: 0.1rem;
     }
     .form-input {
+      padding: 0%;
       margin-bottom: 1rem;
     width: 100%;
       display: flex;
