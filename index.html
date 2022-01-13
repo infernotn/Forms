@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+        width: 100vw;
+        height: 100vh;
+      /* background-color: rgb(212, 33, 39); */
+      background-image: url(https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg);
+    background-size: cover;
+    }
+
+   
+
+    form {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+      max-width: 40%;
+      height: 90%;
+      background: rgba(35, 35, 53, 0.5);
+
+      padding: 2.5rem 1rem;
+      margin: auto;
+      border-radius: 0.25rem;
+      visibility: visible;
+
+      display: flex;
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+              position: relative;
+              box-shadow: black 0rem 0rem 1.5rem ;
+    }
+    #CloseForm {
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      width: 1rem;
+      aspect-ratio: 1;
+    }
+    input {
+      width: 100%;
+      height: 1.5rem;
+      border: none;
+      border-radius: 0.3rem;
+      padding-left: 0.5rem;
+    }
+
+    input:focus {
+      box-shadow: rgb(255, 250, 224) 0px 0px 10px;
+      color: rgba(43, 43, 73, 1);
+    }
+    input::placeholder {
+      color: rgba(43, 43, 73, 0.5);
+      font-size: smaller;
+      text-align: left;
+      vertical-align: middle;
+    }
+    input:hover {
+      box-shadow: rgb(255, 250, 224) 0px 0px 3px;
+    }
+    label {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: rgb(243, 243, 243);
+      height: fit-content;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 100;
+      margin-bottom: 0.2rem;
+    }
+    #name-input{
+        display: flex; justify-content: space-between
+    }
+    .IconImgForm {
+      width: 2rem;
+      aspect-ratio: 1;
+      margin-right: 0.5rem;
+    }
+    select {
+        width: fit-content;
+      border: none;
+      height: 1.2rem;
+      border-radius: 0.3rem;
+    }
+    .sub-input {
+      width: 40%;
+    }
+    .sub-input > label {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: rgba(243, 243, 243, 0.9);
+      height: fit-content;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 100;
+      margin-bottom: 0.2rem;
+      margin-top: 0.1rem;
+    }
+    .form-input {
+      margin-bottom: 1rem;
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+        justify-content: center;
+    }
+    input[type="checkbox"] {
+      width: 1.5rem;
+      aspect-ratio: 1;
+      border-radius: 1rem;
+      border: none;
+    margin-right: 1rem;
+    }
+
+
+
+    
+    #rulesrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    #rulesrow>label {
+    font-size: 0.8rem; 
+    }
+    button{
+        border: none;
+        width: fit-content;
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.8rem;
+font-size: medium;
+font-weight: 700;
+color: rgb(255, 250, 224);
+background-color: rgb(240, 25, 61);
+    }
+    button:hover{
+        box-shadow: rgb(255, 250, 224) 0px 0px 5px;
+        background-color: rgb(255, 250, 224);
+color: rgb(240, 25, 61);
+    }
+    a{
+        text-decoration: none; color:rgb(240, 25, 61);
+    }
+    a:hover{
+        text-shadow: rgb(255, 250, 224) 0px 0px 1px;
+  
+    }
+
+
+    @media screen and  (max-width: 480px) {
+      form {
+        width:100vw;
+      }
+      #name-input{
+        display: flex;
+        flex-direction: column;
+      
+    }
+      #name-input>.sub-input{
+        width: 100%;      
+    }
+    
+    #rulesrow {
+        display: flex;
+      flex-direction: column;
+
+    }
+    #rulesrow>label {
+        text-align: center;
+    }
+    input[type="checkbox"]{
+        margin-bottom: -0.5rem;
+    }
+    }
+  </style>
+  <body>
+    <form id="contact-form">
+      <img id="CloseForm" src="./images/close_1.svg" />
+      <div class="form-input">
+        <label for="Name">Name :</label>
+        <div id="name-input" >
+          <div class="sub-input">
+            <input
+              type="text"
+              id="FN"
+              placeholder="Enter Your First Name"
+              required=""
+            />
+            <label for="FirstName"> First Name :</label>
+          </div>
+          <div class="sub-input">
+            <input
+              type="text"
+              id="LN"
+              placeholder="Enter Your Last Name"
+              required=""
+            />
+            <label for="LastName"> Last Name :</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-input">
+        <label for="Email"> Email :</label>
+        <input
+          type="email"
+          id="EMAIL"
+          placeholder="Enter Your Email"
+          required=""
+        />
+      </div>
+      <!-- <img class="IconImgForm" src="dist/images/ic_email.png" />
+        <input type="Email" id="EM" placeholder="Email:" required="" />
+      </div>
+      <div id="C1">
+        <img class="IconImgForm" src="dist/images/ic_account.png" />
+        <input type="text" id="ct1" placeholder="Last Name" />
+      </div>
+      <div id="C2">
+        <img class="IconImgForm" src="dist/images/ic_account.png" />
+        <input type="text" id="ct2" placeholder="Last Name" />
+      </div>
+      <div id="C3">
+        <img class="IconImgForm" src="dist/images/ic_account.png" />
+        <input type="text" id="ct3" placeholder="Last Name" />
+      </div>
+      <div id="C4">
+        <img class="IconImgForm" src="dist/images/ic_account.png" />
+        <input type="text" id="ct4" placeholder="Last Name" />
+      </div>
+      <div id="C5">
+        <img class="IconImgForm" src="dist/images/ic_account.png" />
+        <input type="text" id="ct5" placeholder="Last Name" />
+      </div> -->
+      <div class="form-input">
+        <label for="CAR"> Car :</label>
+
+        <select required="">
+          <option>Select Your Car</option>
+          <option>Honda Civic</option>
+          <option>Honda CR-V</option>
+          <option>Toyota</option>
+        </select>
+      </div>
+      <!-- <hr style="width: 60%; border: solid; border-radius: 1px; border-color: aliceblue; border-width: 1px;"> -->
+      <div class="form-input" id="rulesrow">
+        <input id="terms_checkbox" type="checkbox" />
+        <label><p>I have read the program's 
+             <a   href="#"> terms and conditions</a></label>
+            </p></div>
+
+            <button>Submit to play</button>
+    </form>
+  </body>
+</html>
