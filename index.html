@@ -26,11 +26,11 @@
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-      max-width: 40%;
-      max-height: 50%;
+      max-width: 50%;
+     max-height: fit-content;
       background: rgba(35, 35, 53, 0.5);
 
-      padding: 2.5rem 1.5rem;
+      padding: 1.8rem 1.5rem;
       
       border-radius: 0.25rem;
       visibility: visible;
@@ -143,8 +143,9 @@
     button{
         border: none;
         width: fit-content;
-        padding: 0.5rem 0.8rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 0.8rem;
+        
 font-size: medium;
 font-weight: 700;
 color: rgb(255, 250, 224);
@@ -189,10 +190,27 @@ color: rgb(240, 25, 61);
         margin-bottom: -0.5rem;
     }
     }
+    #form-header{
+      display: flex;
+
+    justify-content: center;
+    align-items: center;
+      /* background: rgba(35, 35, 53, 0.9); */
+      width: 100%;
+      height: 2rem;
+    
+    color: rgb(240, 25, 61);
+ 
+    }
   </style>
   <body>
     <form id="contact-form">
+      <div id="form-header">
+        <h3>REGISTER TO PLAY</31>
       <img id="CloseForm" src="./images/close_1.svg" />
+
+    </div>
+    <hr style="width: 60%; border: solid; border-radius: 1px; border-color: aliceblue; border-width: 1px;">
       <div class="form-input">
         <label for="Name">Name :</label>
         <div id="name-input" >
@@ -241,7 +259,7 @@ color: rgb(240, 25, 61);
              <a   href="#"> terms and conditions</a></label>
             </p></div>
 
-            <button>Submit to play</button>
+            <button>Submit</button>
     </form>
   </body>
 </html>
